@@ -201,7 +201,7 @@ header {
     padding-bottom: 8px;
     list-style-type: none;
     width: 200px;
-    background-image: url(cookcamp/arrow.png);
+    background-image: url(arrow.png);
     background-repeat: no-repeat;
     background-position: 5% 5%;
 }
@@ -220,7 +220,7 @@ h2 {
     color: #fff;
    padding-left:40px; 
    margin:5px 10px 15px;
-   background-image: url(cookcamp/dish.png);
+   background-image: url(dish.png);
    background-repeat: no-repeat;
    background-position:  15px;
    font-weight: normal;
@@ -275,7 +275,7 @@ h2 {
     font-size: 13px;
     text-decoration: none;
     color: #ee7742;
-    background-image: url(cookcamp/arrow.png);
+    background-image: url(arrow.png);
     background-repeat: no-repeat;
     padding-left: 25px;
     background-position: 5% 30%;
@@ -362,7 +362,7 @@ h3 {
     font-size: 13px;
     text-decoration: none;
     color: #ee7742;
-    background-image: url(cookcamp/arrow.png);
+    background-image: url(arrow.png);
     background-repeat: no-repeat;
     padding-left: 25px;
     background-position: 5% 30%;
