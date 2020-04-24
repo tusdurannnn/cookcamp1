@@ -1,444 +1,102 @@
 @charset"UTF-8";
 
-/*----------------------------
-リセットCSSここから
-----------------------------*/
-
-html, body, div, span, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-abbr, address, cite, code,
-del, dfn, em, img, ins, kbd, q, samp,
-small, strong, sub, sup, var,
-b, i,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section, summary,
-time, mark, audio, video {
-    margin:0;
-    padding:0;
-    border:0;
-    outline:0;
-    font-size:100%;
-    vertical-align:baseline;
-    background:transparent;
-}
+/*------------------------------
+          全体のCSS
+--------------------------------*/
 
 body {
-    line-height:1;
-}
-
-article,aside,details,figcaption,figure,
-footer,header,hgroup,menu,nav,section {
-    display:block;
-}
-
-nav ul {
-    list-style:none;
-}
-
-blockquote, q {
-    quotes:none;
-}
-
-blockquote:before, blockquote:after,
-q:before, q:after {
-    content:'';
-    content:none;
-}
-
-a {
-    margin:0;
-    padding:0;
-    font-size:100%;
-    vertical-align:baseline;
-    background:transparent;
-}
-
-/* change colours to suit your needs */
-ins {
-    background-color:#ff9;
-    color:#000;
-    text-decoration:none;
-}
-
-/* change colours to suit your needs */
-mark {
-    background-color:#ff9;
-    color:#000;
-    font-style:italic;
-    font-weight:bold;
-}
-
-del {
-    text-decoration: line-through;
-}
-
-abbr[title], dfn[title] {
-    border-bottom:1px dotted;
-    cursor:help;
-}
-
-table {
-    border-collapse:collapse;
-    border-spacing:0;
-}
-
-/* change border colour to suit your needs */
-hr {
-    display:block;
-    height:1px;
-    border:0;  
-    border-top:1px solid #cccccc;
-    margin:1em 0;
-    padding:0;
-}
-
-input, select {
-    vertical-align:middle;
-}
-
-/*----------------------------
-リセットCSSここまで
-----------------------------*/
-body {
-    background-color: #f5f5dd;
-    color: black;
-}
-
-.wrapper {
-     width: 960px;
-     margin: 0 auto;
-}
-
-/*----------------------------
-  headerここから
-----------------------------*/
-
-header {
-    width: 100%;
-    height: 106px;
-    background-color: #fff;
-    border-bottom: 1px dotted #c7cacb;
-    min-width: 960px;
-}
-
-.header {
-     width: 960px;
-     margin: 0 auto;
-}
-
-.header-logo {
-    float: left;
-    padding-top: 10px;
-}
-
-.header-logo p {
+    padding-top:120px;
+} 
+p {
     font-size:13px;
-    padding:5px 0;
 }
 
-.form {
-    float: right;
-    margin-top: 20px;
-}
-
-.header nav  {
-    clear: both;
-}
-
-.header nav ul li {
-    float: left;
-    margin: 10px 0;
-    width: 20%;
-}
-
-.header nav ul li {
-    float: left;
-    margin: 10px 0;
-    width: 20%;
-}
-
-.header nav ul li a {
-    text-align: center;
-    text-decoration: none;
-    color: #5c3b29;
-    border-left: 1px dotted #bdbcbc;
-    display: block;
-}
-
-.header .new a {
-    border-left: none;
-}
-
-/*----------------------------
-  mainimageここから
-----------------------------*/
-.mainimage {
-    width:960px;
-    background-color: #67ea89;
-    clear: both;
-}
-
-/*----------------------------
-  leftここから
-----------------------------*/
-
-.left {
-    float: left;
-}
-
-.left-top {
-    width:200px;
-    background-color: #f9f8f1;
-    margin-top:15px;
-    padding-top: 3px;
-}
-
-.left-top li, .left-bottom li {
-    margin-top: 7px;
-    padding-bottom: 8px;
-    list-style-type: none;
-    width: 200px;
-    background-image: url(arrow.png);
+.dish {
     background-repeat: no-repeat;
-    background-position: 5% 5%;
+    background-position: 7px;
+    border-bottom: 2px solid #c9baa8;
+    font-size: 16px;
+    color: #664433;
+    padding-left: 27px;
+    background-image: url(icon.png);
+    background-size: 15px 15px;
+    line-height: 1.7;
 }
-.left-top ul li a,.left-bottom ul li a {
-    text-decoration: none;
-    color: black;
-    padding-left:30px;
-    display: block;
-}
-
-h2 {
-    background-color: #99bb22;
-    height: 30px;
-    line-height: 30px;
-    border-radius: 10px;
-    color: #fff;
-   padding-left:40px; 
-   margin:5px 10px 15px;
-   background-image: url(dish.png);
-   background-repeat: no-repeat;
-   background-position:  15px;
-   font-weight: normal;
+/*-----------------------------
+       ナビゲーション
+------------------------------*/
+.logo {
+    margin: 10px;
 }
 
-.dishlast a {
-    border-bottom:none;
-}
-
-.border{
-     border-bottom:1px dotted #b3b1b3;
-}
-
-.left-bottom {
-    width:200px;
-    background-color: #f9f8f1;
-    margin-top:10px;
-    padding-top: 3px;
-}
-
-
-/*----------------------------
-    mainここから）
-----------------------------*/
-.main {
-    float: left;
-}
-
-.main-top {
-    width:590px;
-    height: 170px;
-    margin-top:15px;
-    margin-left: 8px;
-    background-color: #f9f8f1;
-    padding-top: 3px;
-}
-
-.main-lecipi {
-    width: 20%;
-    float: left;
-    text-align: center;
-    margin-top: 10px;
-}
-
-.main-top p {
-    font-size:12px;
-    padding-top: 5px;
-}
-
-.center-lecipi a {
-    margin-left: 220px;
-    font-size: 13px;
-    text-decoration: none;
-    color: #ee7742;
-    background-image: url(arrow.png);
-    background-repeat: no-repeat;
-    padding-left: 25px;
-    background-position: 5% 30%;
-}
-
-.main-center {
-    width:590px;
-    height: 260px;
-    clear: both;
-    margin-top:10px;
-    margin-bottom:10px;
-    margin-left: 10px;
-    background-color: #f9f8f1;
-    padding-top: 3px;
-}
-
-.main-center img {  
-   float: left;
-   margin: 0 0 10px 15px;
-}
-
-.center-lecipi {
-    float: right;
-    width: 330px;
-    height: 200px;
+.nav-link {
     font-size: 14px;
 }
 
-.center-lecipi p {
-    text-indent: 1em;
-}
-.center-lecipi img {
-    padding-right: 10px;
-    margin:0px;
-}
-
-.main-bottom {
-    width:590px;
-    margin-left: 8px;
-    background-color: #f9f8f1;
-    clear: both;
-    padding-top: 3px;
-}
-.main-bottom img,.bottomlesipi2 img{
-    float: left;
-    padding-right: 10px;
+.border_i {
+    border-left: 1px solid #bdbcbc;
     padding-left: 10px;
 }
 
-.bottomlesipi1 {
-    margin-bottom: 10px;
-    height: 120px;
-}
-.bottom-lecipi1 {
-    float: right;
-    width: 330px;
+.border_ii {
+    border-left: 1px solid #bdbcbc;
+    padding-right: 30px;
 }
 
-.bottom-lecipi1 p,.bottom-lecipi2 p {
-    padding-top: 10px;
-    font-size: 13px;
-    padding-bottom: 10px;
-    text-indent: 1em;
+@media screen and (max-width: 767px) {
+.img_logo{
+    padding-left: 50px;
 }
-
-.bottomlesipi2 {   
-    clear: both;
-    margin-top: 20px; /*効かない*/
-    margin-bottom: 20px;
-    height: 140px;
-}
-
-h3 {
-    color: #5c3b29;
-}
-
-.bottom-lecipi2 {
-    float: right;
-    width: 330px;
-}
-
-.bottom-lecipi1 a, .bottom-lecipi2 a {
-    margin-left: 220px;
-    font-size: 13px;
-    text-decoration: none;
-    color: #ee7742;
-    background-image: url(arrow.png);
-    background-repeat: no-repeat;
-    padding-left: 25px;
-    background-position: 5% 30%;
-}
-
-.clearfix {
-    clear: both; 
-}
-/*----------------------------
-   rightここから
-----------------------------*/
-
-.right {
-    float: right;
-}
-.right-top {
-    width:154px;
-    height: 351px;
-    margin-top: 15px;
-    display: block;
-}
-
-.right-bottom {
-    width:154px;
-    height: 351px;
-    margin-top: 10px;
-    display: block;
-}
-
-
-/*----------------------------
-   footerここから
-----------------------------*/
-footer {
-    width: 100%; 
-    height: 80px;
-    background-color: #fff;
-    clear: both;
-    padding-top: 20px;
-    border-top: 1px dotted #c7cacb;
-    min-width: 960px;
-}
-
-.footer {
-    width:960px;
-    margin: 0 auto;
+.navbar-nav {
     text-align: center;
 }
 
-.footer nav  {
-    margin-left: 225px;
-    margin-right: 225px;
+.border_i {
+		display: none;
+	}
+.border_ii {
+		display: none;
+	}
 }
 
+@media screen and (max-width: 768px) {
+	
+}
 
-.footer nav ul li {
-    float: left;
-    margin: 10px;
-    border-right: 1px dotted #bdbcbc;
+/*------------------------------
+    料理別・ジャンル別レシピ  
+------------------------------*/
+
+a.list-group-item {
+    border:none;
+    border-bottom: 1px dotted #c9baa8;
+}
+.list-group-item {
+    color: #000000;
+    background-repeat: no-repeat;
+    background-image: url(arrow.png);
+    background-position: 7px;
+    border-bottom: 1px dotted #c9baa8;
+    line-height: 2;
+    padding-left: 10px;
+    display: block;
+}
+
+/*------------------------------
+      簡単おすすめレシピ 
+------------------------------*/
+
+.recipi_dish {
+    font-size: 15.5px;
+    color: #664433;
+}
+/*------------------------------
+           Footer   
+------------------------------*/
+.footer_color {
+    color: #000000;
+}
+
    
-}
-.footer  nav ul li a {
-    text-decoration: none;
-    font-size:13px;
-   
-    padding-right: 15px;
-    color: #5c3b29;
-}
-
-.footer p {
-    clear: both;
-    font-size:12px;
-    margin-top: 10px;
-}
-
-.footer .footerline  {
-    border-right:none;
-}
-
+          
+         
